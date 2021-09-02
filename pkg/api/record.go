@@ -36,7 +36,6 @@ func ServeVisitResource(r *gin.Engine, data data.VisitData) {
 // or an error message if it failed.
 func (a VisitAPI) Get(c *gin.Context) {
 	log.Info("Method Get starts work")
-	log.Info("--------------------------------------------------------------------------------")
 	from := c.Query("from")
 	to := c.Query("to")
 	spaceId := c.Query("spaceId")
